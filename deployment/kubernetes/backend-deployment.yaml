@@ -1,0 +1,20 @@
+# deployment/kubernetes/backend-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: debrisguard-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: debrisguard-backend
+  template:
+    metadata:
+      labels:
+        app: debrisguard-backend
+    spec:
+      containers:
+      - name: backend
+        image: debrisguard-backend:latest
+        ports:
+        - containerPort: 5000
