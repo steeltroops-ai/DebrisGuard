@@ -1,0 +1,30 @@
+# Frontend (React) ignore patterns
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# Backend (Python) ignore patterns
+backend/venv/
+*.pyc
+__pycache__/
+*.egg-info/
+build/
+dist/
+
+# Data directories
+data/processed/
+
+# IDE-specific files
+.vscode/
+
+# Log and backup files
+*.log
+*.bak
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Additional patterns
+*.ipynb_checkpoints
+tests/results/
